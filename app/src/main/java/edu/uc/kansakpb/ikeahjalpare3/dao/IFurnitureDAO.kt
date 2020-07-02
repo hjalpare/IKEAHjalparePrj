@@ -6,9 +6,10 @@ import retrofit2.http.GET
 
 interface IFurnitureDAO {
     //Created DAO class for
-    @GET("/dbc64a5b111a92183e33.json")
+    // json file to search IKEA: http://www.ikea.com/us/en/iows/catalog/availability/12345678 replace: https://api.npoint.io
+    @GET("/us/en/iows/catalog/availability/12345678")
     fun getAllFurnitures(): retrofit2.Call<ArrayList<Furniture>>
 
-    @GET("/dbc64a5b111a92183e33.json")
+    @GET("/us/en/iows/catalog/availability/12345678")
     fun getFurnitures(furnitureName: String) : retrofit2.Call<ArrayList<Furniture>>
 }

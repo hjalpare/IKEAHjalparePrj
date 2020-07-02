@@ -5,7 +5,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClientInstance {
     private var retrofit: Retrofit? = null;
-    private val BASE_URL = "https://api.npoint.io"
+    // json file to search IKEA: http://www.ikea.com/us/en/iows/catalog/availability/12345678 replace: https://api.npoint.io
+    private val BASE_URL = "http://www.ikea.com"
 
     val retrofitInstance : Retrofit?
         get() {
