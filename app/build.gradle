@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -40,5 +42,6 @@ dependencies {
     testImplementation "io.mockk:mockk:1.8.9"
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'         //added internet permissions to androidmanifest.xml
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'//implementations
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
 
 }

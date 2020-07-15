@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "524796239750",
+    "firebase_url": "https://ikeahjalpare.firebaseio.com",
+    "project_id": "ikeahjalpare",
+    "storage_bucket": "ikeahjalpare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524796239750:android:0f64505edd0a43b8481607",
+        "android_client_info": {
+          "package_name": "edu.uc.kansakpb.ikeahjalpare3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524796239750-mugukmkto8avkpof5hm48m76fkd77n3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqld9GetYy7K1WLneKmN3xyq3ecoKH0j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524796239750-mugukmkto8avkpof5hm48m76fkd77n3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
