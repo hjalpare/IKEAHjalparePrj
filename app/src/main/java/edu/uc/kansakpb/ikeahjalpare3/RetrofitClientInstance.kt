@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClientInstance {
     private var retrofit: Retrofit? = null;
-    private val BASE_URL = "https://api.npoint.io"
+    private val BASE_URL = "https://ikeafurnituredb.s3.us-east-2.amazonaws.com"
 
     val retrofitInstance : Retrofit?
         get() {
