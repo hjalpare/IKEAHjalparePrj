@@ -1,4 +1,4 @@
-package edu.uc.kansakpb.ikeahjalpare3
+package edu.uc.kansakpb.ikeahjalpare3.ui.main
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
