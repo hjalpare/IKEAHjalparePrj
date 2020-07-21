@@ -11,6 +11,6 @@ data class Furniture(
 ) {
     //formated like Furniture Name, link and intructions link
     override fun toString(): String {
-        return "$id $videoLink $articleNumber $furnitureName $instructionsManuel"
+        return "$furnitureName $id $videoLink $articleNumber $instructionsManuel"
     }
 }
