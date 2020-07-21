@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import edu.uc.kansakpb.ikeahjalpare3.R
+import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import kotlinx.android.synthetic.main.main_fragment.*
 
 
@@ -24,7 +25,7 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         viewModel.furnitures.observe(viewLifecycleOwner, Observer {
-                _furnitures -> actFurnitureName.setAdapter(ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, _furnitures))
+                _furnitures: ArrayList<Furniture> -> actFurnitureName.setAdapter(ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, _furnitures))
         })
     }
     companion object {
