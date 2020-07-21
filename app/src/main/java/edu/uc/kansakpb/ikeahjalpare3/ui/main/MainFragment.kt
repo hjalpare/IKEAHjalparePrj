@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import edu.uc.kansakpb.ikeahjalpare3.R
+import kotlinx.android.synthetic.main.main_fragment.*
 
 class MainFragment : Fragment() {
 
@@ -24,7 +25,19 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        viewModel.furnitures.observe(this, Observer{
+            furnitures -> actFurnitureName.setAdapter(ArrayAdapter(context))
+        })
         // TODO: Use the ViewModel
+    }
+
+    private fun saveModel(){
+        var model = Model().apply {
+            description = txtDescription.text.toString()
+            furnitureName = actFurnitureName.text.toString()
+        }
+
+        viewModel.save(model)
     }
 
 }
