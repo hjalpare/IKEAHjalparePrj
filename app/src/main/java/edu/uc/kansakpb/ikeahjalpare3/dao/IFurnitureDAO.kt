@@ -11,5 +11,7 @@ interface IFurnitureDAO {
     fun getAllFurnitures(): Call<ArrayList<Furniture>>
 
     @GET("/ikeafurniture.json")
-    fun getFurniture(@Query("Combined_Name")funritureName: String): Call <ArrayList<Furniture>>
+    fun getFurniture(@Query("furniture_name")funritureName: String): Call <ArrayList<Furniture>>
+
+    // Website for .json feed: https://ikeafurnituredb.s3.us-east-2.amazonaws.com/ikeafurniture.json
 }
