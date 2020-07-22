@@ -6,8 +6,8 @@ import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import edu.uc.kansakpb.ikeahjalpare3.service.FurnitureService
 
 class MainViewModel : ViewModel() {
-    var _furnitures: MutableLiveData<ArrayList<Furniture>> = MutableLiveData<ArrayList<Furniture>>()
-    var furnitureService: FurnitureService = FurnitureService()
+    private var _furnitures: MutableLiveData<ArrayList<Furniture>> = MutableLiveData<ArrayList<Furniture>>()
+     var furnitureService: FurnitureService = FurnitureService()
 
     init {
         fetchFurnitures("furnitureName")
