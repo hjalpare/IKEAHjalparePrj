@@ -11,5 +11,5 @@ data class Furniture(
 ) {
     override fun toString(): String {
         return "$furnitureName $id $articleNumber $instructionsManuel $videoLink"
-}
+    }
 }
