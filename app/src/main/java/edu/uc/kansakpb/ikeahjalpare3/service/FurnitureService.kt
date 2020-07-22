@@ -1,7 +1,7 @@
 package edu.uc.kansakpb.ikeahjalpare3.service
 
 import androidx.lifecycle.MutableLiveData
-import edu.uc.kansakpb.ikeahjalpare3.ui.main.RetrofitClientInstance
+import edu.uc.kansakpb.ikeahjalpare3.RetrofitClientInstance
 import edu.uc.kansakpb.ikeahjalpare3.dao.IFurnitureDAO
 import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import retrofit2.Call
@@ -12,7 +12,7 @@ class FurnitureService {
 
     internal fun fetchFurnitures(furnitureName: String) : MutableLiveData<ArrayList<Furniture>> {
         //MVD is defined
-        var _furnitures = MutableLiveData<ArrayList<Furniture>>()
+        val _furnitures = MutableLiveData<ArrayList<Furniture>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(IFurnitureDAO::class.java)
         val call = service?.getAllFurnitures()
         call?.enqueue(object: Callback<ArrayList<Furniture>> {

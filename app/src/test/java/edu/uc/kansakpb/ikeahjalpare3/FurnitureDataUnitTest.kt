@@ -22,13 +22,15 @@ class FurnitureDataUnitTest {
 
     @get:Rule
     var rule: TestRule = InstantTaskExecutorRule()
-    lateinit var mvm: MainViewModel
+    lateinit private var mvm: MainViewModel
 
-    var furnitureService = mockk<FurnitureService>()
+    private var furnitureService = mockk<FurnitureService>()
 
     @Test
     fun confirmKopangDrawerDresser_outputsKopangDrawerDresser () {
-        var furniture: Furniture = Furniture("Kopang Lamp", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4")
+        val furniture: Furniture = Furniture("Kopang Lamp",
+            "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf",
+            "https://www.youtube.com/watch?v=biL6K6OESe4", furnitureName = "KopangDrawerDresser", instructionsManuel = "assembly_instructions")
         assertEquals("https://www.youtube.com/watch?v=biL6K6OESe4", furniture.toString())
     }
 
@@ -45,12 +47,15 @@ class FurnitureDataUnitTest {
     }
 
     private fun createMockData() {
-        var allFurnituresLiveData = MutableLiveData<ArrayList<Furniture>>()
-        var allFurnitures = ArrayList<Furniture>()
+        val allFurnituresLiveData = MutableLiveData<ArrayList<Furniture>>()
+        val allFurnitures = ArrayList<Furniture>()
         //create and add plants to our collection.
-        var KopangDrawerDresser = Furniture("KopangDrawerDresser", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4")
-        allFurnitures.add(KopangDrawerDresser)
-        var KopangLamp = Furniture("KopangLamp", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4")
+        val kopangDrawerDresser = Furniture("KopangDrawerDresser",
+            "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf",
+            "https://www.youtube.com/watch?v=biL6K6OESe4", furnitureName ="KopangDrawerDresser", instructionsManuel = "m" )
+        allFurnitures.add(kopangDrawerDresser)
+        val KopangLamp = Furniture("KopangLamp", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf",
+            "https://www.youtube.com/watch?v=biL6K6OESe4", furnitureName ="KopangDrawerDresser", instructionsManuel = "assembly_instructions")
         allFurnitures.add(KopangLamp)
 
         allFurnituresLiveData.postValue(allFurnitures)
@@ -63,7 +68,7 @@ class FurnitureDataUnitTest {
     }
 
     private fun thenResultContainsDrawerDresser() {
-        var KopangDrawerDresserFound = false;
+        var KopangDrawerDresserFound = false
         mvm.furnitures.observeForever {
             //do observing here
             assertNotNull(it)
