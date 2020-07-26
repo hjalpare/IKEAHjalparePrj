@@ -25,7 +25,7 @@ class FurnitureService {
             }
             //Call onFailure to determine if the response indicates success.
             override fun onFailure(call: Call<ArrayList<Furniture>>, t: Throwable) {
-                // throw Exception("Unable to parse json file")
+                throw Exception("Unable to parse json file")
             }
         })
         return furnitures
