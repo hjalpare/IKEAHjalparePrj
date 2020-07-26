@@ -24,13 +24,13 @@ class FurnitureDataUnitTest {
     lateinit var mvm: MainViewModel
 
     var furnitureService = mockk<FurnitureService>()
-
+/*
     @Test
     fun confirmKopangDrawerDresser_outputsKopangDrawerDresser () {
         var furniture: Furniture = Furniture(1001, "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4", "KOPPANG", "asdasdf")
         assertEquals("https://www.youtube.com/watch?v=biL6K6OESe4", furniture.toString())
     }
-/*
+
     @Test
     fun searchForKopangDrawerDresser_returnsKopangDrawerDresser() {
         givenAFeedOfMockedFurnitureDataAreAvailable()
