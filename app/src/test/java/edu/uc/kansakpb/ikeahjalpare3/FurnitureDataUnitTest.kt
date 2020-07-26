@@ -8,7 +8,6 @@ import edu.uc.kansakpb.ikeahjalpare3.ui.main.MainViewModel
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test
-
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.rules.TestRule
@@ -28,7 +27,7 @@ class FurnitureDataUnitTest {
 
     @Test
     fun confirmKopangDrawerDresser_outputsKopangDrawerDresser () {
-        var furniture: Furniture = Furniture("Kopang Lamp", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4")
+        var furniture: Furniture = Furniture(1001, "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4", "KOPPANG", "asdasdf")
         assertEquals("https://www.youtube.com/watch?v=biL6K6OESe4", furniture.toString())
     }
 
@@ -48,9 +47,9 @@ class FurnitureDataUnitTest {
         var allFurnituresLiveData = MutableLiveData<ArrayList<Furniture>>()
         var allFurnitures = ArrayList<Furniture>()
         //create and add plants to our collection.
-        var KopangDrawerDresser = Furniture("KopangDrawerDresser", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4")
+        var KopangDrawerDresser = Furniture(1001, "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4", "KOPPANG", "asdfasdf")
         allFurnitures.add(KopangDrawerDresser)
-        var KopangLamp = Furniture("KopangLamp", "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4")
+        var KopangLamp = Furniture(1001, "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf", "https://www.youtube.com/watch?v=biL6K6OESe4", "KOPPANG", "asdfasdf")
         allFurnitures.add(KopangLamp)
 
         allFurnituresLiveData.postValue(allFurnitures)
