@@ -9,8 +9,8 @@ data class Furniture(
     @SerializedName("furniture_name") var furnitureName: String,
     @SerializedName("instructions_manuel")var instructionsManuel: String
 ) {
-    //formated like Furniture Name, link and intructions link
+
     override fun toString(): String {
-        return "$furnitureName $id $videoLink $articleNumber $instructionsManuel"
+        return "$furnitureName" //Only the furniture name will display in the AutoCompleteTextView now, much cleaner
     }
 }
