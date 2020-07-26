@@ -12,7 +12,6 @@ import edu.uc.kansakpb.ikeahjalpare3.R
 import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import kotlinx.android.synthetic.main.main_fragment.*
 
-
 class MainFragment : Fragment() {
 
     companion object {
