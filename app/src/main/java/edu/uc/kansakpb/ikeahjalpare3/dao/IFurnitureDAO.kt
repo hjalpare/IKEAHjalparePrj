@@ -8,4 +8,5 @@ interface IFurnitureDAO {
     //Created DAO class for
     @GET("/ikeafurniture.json")
     fun getAllFurnitures(): Call<ArrayList<Furniture>>
+
 }
