@@ -9,7 +9,7 @@
 
     <AutoCompleteTextView
         android:id="@+id/actFurnitureName"
-        android:layout_width="318dp"
+        android:layout_width="300dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
@@ -30,18 +30,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actFurnitureName" />
 
-    <ImageButton
+    <Button
         android:id="@+id/btnSearch"
-        android:layout_width="60dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginBottom="22dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:src="@android:drawable/ic_menu_search"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/btnSearchGo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toEndOf="@+id/actFurnitureName"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

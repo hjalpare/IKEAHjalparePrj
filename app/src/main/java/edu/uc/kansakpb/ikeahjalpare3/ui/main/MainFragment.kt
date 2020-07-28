@@ -12,8 +12,11 @@ import edu.uc.kansakpb.ikeahjalpare3.R
 import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import kotlinx.android.synthetic.main.main_fragment.*
 
+//MainFragment does nothing for the time being
 
-class MainFragment : Fragment() {
+//Kept here because I might use the code later
+
+open class MainFragment : Fragment() {
 
     companion object {
         fun newInstance() = MainFragment()
@@ -33,5 +36,4 @@ class MainFragment : Fragment() {
                 _furnitures: ArrayList<Furniture> -> actFurnitureName.setAdapter(ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, _furnitures))
         })
     }
-
 }

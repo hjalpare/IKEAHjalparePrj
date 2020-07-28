@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">IKEAHjalpare3</string>
+    <string name="app_name">IKEA Hjalpare</string>
     <string name="furniturename">FurnitureName</string>
     <string name="inputFurnName">Furniture Name</string>
     <string name="furnitureName">Furniture Name</string>
     <string name="welcomeText"><b>Welcome to IKEA HJALPARE!</b>\n\nSearch for your IKEA furniture item to view a
     video tutorial and discussion board post about it.\n\nHappy building!</string>
+    <string name="message">Hello Geeks! This is a Button.</string>
+    <string name="btnSearchGo">Go!</string>
+    <string name="btnBackToHome">Go Back To Main Activity</string>
 </resources>
