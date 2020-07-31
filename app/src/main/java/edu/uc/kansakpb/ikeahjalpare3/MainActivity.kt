@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import edu.uc.kansakpb.ikeahjalpare3.R.id.actFurnitureName
 import edu.uc.kansakpb.ikeahjalpare3.R.id.main
 import edu.uc.kansakpb.ikeahjalpare3.R.layout.main_fragment
 import edu.uc.kansakpb.ikeahjalpare3.ui.main.FurnitureFragment
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnSearch = findViewById<Button>(R.id.btnSearch)
         btnSearch.setOnClickListener {
+            val furnitureSearchTextViewText: String
+            furnitureSearchTextViewText = actFurnitureName.text.toString()
             val intent = Intent(this, FurnitureActivity::class.java)
             startActivity(intent)
         }
