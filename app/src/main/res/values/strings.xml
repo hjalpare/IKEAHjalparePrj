@@ -5,8 +5,8 @@
     <string name="furnitureName">Furniture Name</string>
     <string name="titleApp"><b>Welcome to IKEA HJALPARE!</b></string>
     <string name="welcomeText">Search for your IKEA furniture item to view a
-    video tutorial and discussion board post about it.\n\nHappy building!</string>
+    video tutorial and the instruction manual for it.\n\nHappy building!</string>
     <string name="btnSearchGo">Go!</string>
-    <string name="btnBackToHome">Go Back To Main Activity</string>
+    <string name="btnBackToHome">Back</string>
     <string name="temp">Enter Text…</string>
 </resources>
