@@ -3,6 +3,7 @@ package edu.uc.kansakpb.ikeahjalpare3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.util.Linkify
 import android.util.Patterns
 import android.view.GestureDetector
 import android.view.MotionEvent
@@ -35,11 +36,12 @@ class FurnitureActivity : AppCompatActivity() {
             //Extracts the URL form the text, stores it into vidLink
         var pullURL = extractUrl(inputMain)
         vidLink.setText(pullURL)
+        Linkify.addLinks(vidLink, Linkify.WEB_URLS)
             //Extracting Manual link form input
         var pullManualText = inputMain
         var pullManual = pullManualText.substring(pullManualText.lastIndexOf(" ")+1)
-
         instructionsMan.setText(pullManual)
+        Linkify.addLinks(instructionsMan, Linkify.WEB_URLS)
 
         detector = GestureDetectorCompat(this, FurnitureGestureListener())
     }
