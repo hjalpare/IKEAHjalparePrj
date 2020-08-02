@@ -6,7 +6,7 @@ import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import edu.uc.kansakpb.ikeahjalpare3.service.FurnitureService
 
 class MainViewModel : ViewModel() {
-    var _furnitures: MutableLiveData<ArrayList<Furniture>> = MutableLiveData<ArrayList<Furniture>>()
+    private var _furnitures: MutableLiveData<ArrayList<Furniture>> = MutableLiveData<ArrayList<Furniture>>()
     var furnitureService: FurnitureService = FurnitureService()
 
     init {
@@ -19,5 +19,6 @@ class MainViewModel : ViewModel() {
 
     internal var furnitures: MutableLiveData<ArrayList<Furniture>>
         get() {return _furnitures}
-        set(value) {_furnitures = value}
+        set(value) {_furnitures = value
+    }
 }

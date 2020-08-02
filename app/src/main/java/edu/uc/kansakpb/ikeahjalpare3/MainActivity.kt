@@ -3,26 +3,18 @@ package edu.uc.kansakpb.ikeahjalpare3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.widget.*
+import androidx.core.view.GestureDetectorCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import edu.uc.kansakpb.ikeahjalpare3.R.id.main
 import edu.uc.kansakpb.ikeahjalpare3.R.layout.main_fragment
-import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
-import edu.uc.kansakpb.ikeahjalpare3.ui.main.FurnitureFragment
 import edu.uc.kansakpb.ikeahjalpare3.ui.main.MainFragment
-import edu.uc.kansakpb.ikeahjalpare3.ui.main.MainViewModel
-import kotlinx.android.synthetic.main.activity_furniture.*
 import kotlinx.android.synthetic.main.main_activity.*
-import kotlinx.android.synthetic.main.main_fragment.*
-import java.net.URLClassLoader.newInstance
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainFragment: MainFragment
     private lateinit var activeFragment: Fragment
+    private lateinit var detector: GestureDetectorCompat
 
             //Displays Content in main_activity
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +30,6 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Your Furniture Name Text Field is empty",Toast.LENGTH_LONG).show()
             }else{
                 intent.putExtra("Value", inputValue)
-                Toast.makeText(this, "Hi there! This is a Toast: $inputValue", Toast.LENGTH_LONG).show()
                 startActivity(intent)
             }
         }
@@ -47,10 +38,10 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.main, MainFragment.newInstance())
+                .replace(R.id.main, mainFragment)
                 .commitNow()
-            activeFragment = mainFragment
         }
-
     }
+
+
 }
