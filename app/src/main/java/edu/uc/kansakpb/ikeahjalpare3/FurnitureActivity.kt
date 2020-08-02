@@ -53,7 +53,7 @@ class FurnitureActivity : AppCompatActivity() {
             super.onTouchEvent(event)
         }
     }
-
+            //Implemented Back right swipe gesture
     inner class FurnitureGestureListener : GestureDetector.SimpleOnGestureListener() {
         private val    SWIPE_THRESHOLD = 100
         private val SWIPE_VELOCITY_THESHOLD = 100
