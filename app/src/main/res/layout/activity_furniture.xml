@@ -17,26 +17,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtFurnitureSearch"
-        android:layout_width="116dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/searchResults"
+        android:id="@+id/tvSample2"
+        android:layout_width="239dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
-    <TextView
-        android:id="@+id/txtFurnitureSearch2"
-        android:layout_width="118dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/furnitureSearchTextViewText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtFurnitureSearch"
-        app:layout_constraintTop_toBottomOf="@+id/backButton"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

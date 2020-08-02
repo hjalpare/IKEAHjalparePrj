@@ -24,34 +24,24 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainFragment: MainFragment
     private lateinit var activeFragment: Fragment
 
-    var view = ""
-    //val actFurn: AutoCompleteTextView = findViewById<AutoCompleteTextView>(R.id.actFurnitureName)
-        //Displays Content in main_activity
+            //Displays Content in main_activity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(main_fragment)
-
-
 
             //Search button stores actFurnitureName as Intent Extra
         val btnSearch = findViewById<Button>(R.id.btnSearch)
         btnSearch.setOnClickListener {
             val intent = Intent(this, FurnitureActivity::class.java)
-
-//            view = tvSample.text as String
-            //var view1 = actFurn.getText()
             val inputValue: String = actFurnitureName.text.toString()
-            if (inputValue == null){
-                Toast.makeText(this,"please input data, edit text cannot be blank",Toast.LENGTH_LONG).show()
+            if (inputValue == null || inputValue.trim()==""){
+                Toast.makeText(this,"Your Furniture Name Text Field is empty",Toast.LENGTH_LONG).show()
             }else{
-//                tvSample.setText(inputValue).toString()
                 intent.putExtra("Value", inputValue)
                 Toast.makeText(this, "Hi there! This is a Toast: $inputValue", Toast.LENGTH_LONG).show()
                 startActivity(intent)
             }
-
         }
-
 
         mainFragment = MainFragment.newInstance()
 
