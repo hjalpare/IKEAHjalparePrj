@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.Call
 
 interface IFurnitureDAO {
-    //Created DAO class for
+    //DAO class: Extracts json feed
     @GET("/ikeafurniture.json")
     fun getAllFurnitures(): Call<ArrayList<Furniture>>
 }
