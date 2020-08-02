@@ -1,0 +1,72 @@
+[
+  {
+		"id": 1001,
+		"article_number": "303.113.07",
+		"furniture_name": "KOPPANG_6-drawer_dresser,_black-brown67_3/4x32_5/8",
+		"video_link": "https://www.youtube.com/watch?v=biL6K6OESe4",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/koppang-drawer-dresser__AA-2066877-1_pub.pdf"
+	},
+	{
+		"id": 1002,
+		"article_number": "803.607.05",
+		"furniture_name": "TARVA_6-drawer_chest,_pine59_1/2x36_1/4",
+		"video_link": "https://www.youtube.com/watch?v=tPdofIgB4d4",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/tarva-chest-of-6-drawers__AA-2068653-1_pub.pdf"
+	},
+	{
+		"id": 1003,
+		"article_number": "704.073.03",
+		"furniture_name": "BJORKSNAS_5-drawer_chest,_birch35_3/8x35_3/8",
+		"video_link": "https://www.youtube.com/watch?v=NCsQYZywQ04",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/bjoerksnaes-chest-of-5-drawers__AA-2059284-3.pdf"
+	},
+	{
+		"id": 1004,
+		"article_number": "103.667.82",
+		"furniture_name": "SONGESAND_6-drawer_chest,_white32_1/4x49_5/8",
+		"video_link": "https://www.youtube.com/watch?v=NCsQYZywQ04",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/songesand-chest-of-6-drawers__AA-2017265-3_pub.pdf"
+	},
+	{
+		"id": 1005,
+		"article_number": "103.347.53",
+		"furniture_name": "MACKAPAR_Storage_unit,_white39_3/8x20_1/8",
+		"video_link": "https://www.youtube.com/watch?v=7E2eyfowTVc",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/mackapaer-bench-with-storage-compartments-white__AA-1951434-4_pub.pdf"
+	},
+	{
+		"id": 1006,
+		"article_number": "904.715.81",
+		"furniture_name": "KORNSJO_Storage_bench,_black",
+		"video_link": "https://www.youtube.com/watch?v=4uYqd5QFavM",
+		"instructions_manuel": "https://www.ikea.com/us/en/manuals/kornsjoe-storage-bench-black__AA-2180177-1_pub.pdf"
+	},
+	{
+		"id": 1007,
+		"article_number": "702.049.23",
+		"furniture_name": "APPLARO_Storage_bench,_outdoor,_brown_stained_brown31_1/2x16_1/8",
+		"video_link": "https://www.youtube.com/watch?v=ba4gypQODLM",
+		"instructions_manuel": "https://www.ikea.com/us/en/manuals/aepplaroe-storage-bench-outdoor-brown-stained__AA-2096686-1_pub.pdf"
+	},
+	{
+		"id": 1008,
+		"article_number": "904.715.81",
+		"furniture_name": "KORNSJO_Storage_bench,_black",
+		"video_link": "https://www.youtube.com/watch?v=4uYqd5QFavM",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/kornsjoe-storage-bench-black__AA-2186450-6.pdf"
+	},
+	{
+		"id": 1009,
+		"article_number": "403.772.51",
+		"furniture_name": "MATHOPEN_Bench,_medium_brown",
+		"video_link": "https://www.youtube.com/watch?v=wpIRRw3v0Tg",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/mathopen-bench__AA-2063723-6.pdf"
+	},
+	{
+		"id": 1010,
+		"article_number": "404.216.59",
+		"furniture_name": "NORDMELA_Chest_of_drawers_with_clothes_rail,_black-blue46_7/8x46_1/2",
+		"video_link": "https://www.youtube.com/channel/UCxWM0QnsnMf-V4i4NfL4V5w",
+		"instructions_manuel": "https://www.ikea.com/us/en/assembly_instructions/nordmela-chest-of-drawers-with-clothes-rail__AA-2117004-2_pub.pdf"
+	}
+]
