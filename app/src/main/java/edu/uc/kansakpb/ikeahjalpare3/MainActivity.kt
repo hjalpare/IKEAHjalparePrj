@@ -13,8 +13,6 @@ import kotlinx.android.synthetic.main.main_activity.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainFragment: MainFragment
-    private lateinit var activeFragment: Fragment
-    private lateinit var detector: GestureDetectorCompat
 
             //Displays Content in main_activity
     override fun onCreate(savedInstanceState: Bundle?) {

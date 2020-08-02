@@ -20,6 +20,7 @@ open class MainFragment : Fragment() {
 
     private lateinit var viewModel: MainViewModel
 
+            //Inflate in onCreateView
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,6 +29,7 @@ open class MainFragment : Fragment() {
         return inflater.inflate(R.layout.main_activity, container, false)
     }
 
+            //Implemented spinner dropdown
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
