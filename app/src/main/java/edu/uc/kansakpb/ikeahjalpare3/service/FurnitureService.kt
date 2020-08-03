@@ -1,7 +1,7 @@
 package edu.uc.kansakpb.ikeahjalpare3.service
 
 import androidx.lifecycle.MutableLiveData
-import edu.uc.kansakpb.ikeahjalpare3.ui.main.RetrofitClientInstance
+import edu.uc.kansakpb.ikeahjalpare3.RetrofitClientInstance
 import edu.uc.kansakpb.ikeahjalpare3.dao.IFurnitureDAO
 import edu.uc.kansakpb.ikeahjalpare3.dto.Furniture
 import retrofit2.Call
